@@ -15,7 +15,7 @@ export class NewAccountComponent {
     console.log('new status' + status));
   }
   onCreateAccount(accountName: string, accountStatus: string) {
-    this.accountsservice.addAccount(accountName, accountStatus)
+    this.accountsservice.addAccount(accountName, accountStatus);
   }
 
 }

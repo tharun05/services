@@ -9,17 +9,21 @@ import { NewAccountComponent } from './new-account/new-account.component';
 
 import {LoggingService} from './logging.service';
 import {AccountsService} from './accounts.service';
-
+import { routing } from './app.routes';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
     AccountComponent,
-    NewAccountComponent
+    NewAccountComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
+
   ],
   providers: [LoggingService, AccountsService],
   bootstrap: [AppComponent]
